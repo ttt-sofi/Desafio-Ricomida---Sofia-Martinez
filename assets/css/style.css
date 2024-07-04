@@ -53,7 +53,12 @@ main{
     display: none;
 }
 
-.hero-mobile {
+.m-desktop{
+    margin: 0 100px 0 100px;
+}
+
+.hero-mobile
+{
     display: block;
 }
 
@@ -63,7 +68,7 @@ main{
         display: none;
     }
 
-    .hero-mobile {
+    .hero-mobile{
         display: block;
     }
 }
@@ -101,4 +106,17 @@ main{
 
 .carousel-indicators .active {
     background-color: #fff; 
+}
+
+.f-red {
+    margin-top: 50px;
+    padding: 70px;
+    background-color: #DC3545;
+    color: white;
+}
+
+.f-black{
+    padding:40px;
+    background-color: black;
+    color: white;
 }
