@@ -1,7 +1,11 @@
 body{
     padding: 0;
-    margin: 0;
+    margin:0;
     font-family: 'Cabin', sans-serif;
+}
+
+main{
+    margin: 0 100px 0 100px;
 }
 
 .navbar-brand{
@@ -12,7 +16,7 @@ body{
 .btn{
     font-weight: 400;
 }
-.receta1-desktop{
+.receta1-desktop, h6{
     font-size:20px ;
     font-weight: 400;
 }
@@ -40,6 +44,9 @@ body{
     opacity: 100%;
 }
 
+.underline {
+    text-decoration: underline;
+}
 
 /* Estilos por defecto (mobile first) */
 .hero-desktop {
