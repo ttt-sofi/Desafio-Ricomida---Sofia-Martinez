@@ -31,18 +31,17 @@ $(document).ready(
         )
 
         $("h2").dblclick(
-            function(){
+            function () {
                 $(this).css('color', 'red');
             }
         )
 
-        $('.card-title').click(
-            function () {
-                var cardBody = $(this).closest('.card').find('.card-body .card-text');
-                cardBody.toggle();
-            }
-        )
 
+        $(".card-title").on("click", function () {
+            $(this).siblings(".card-text").toggle("slow");
+        }
+
+        )
 
     }
 );
