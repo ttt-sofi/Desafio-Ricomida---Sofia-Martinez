@@ -114,13 +114,19 @@ main{
 
 .f-red {
     margin-top: 50px;
-    padding: 70px;
+    padding: 50px;
     background-color: #DC3545;
     color: white;
 }
+
 
 .f-black{
     padding:40px;
     background-color: black;
     color: white;
+}
+
+.mobile-brand{
+    font-family: "Lobster";
+    font-size: 20px;
 }
