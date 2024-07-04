@@ -1,0 +1,88 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand{
+    font-family: "Lobster";
+    font-size: 37px;
+}
+
+.titulo-desktop{
+    font-family: "Cabin";
+    font-size: 40px;
+    width: 300px;
+}
+
+.subtitulo-desktop{
+    font-family:"Cabin";
+    font-size: 20px;
+}
+
+.titulo-mobile{
+    font-family: "Cabin";
+    font-size: 25px;
+    width: 200px;
+}
+
+.custom-hr{
+    height: 3px; 
+    background-color: black; 
+    border: none;
+    margin: 20px 0; 
+    opacity: 100%;
+}
+
+/* Estilos por defecto (mobile first) */
+.hero-desktop {
+    display: none;
+}
+
+.hero-mobile {
+    display: block;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero-desktop {
+        display: none;
+    }
+
+    .hero-mobile {
+        display: block;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .hero-desktop {
+        display: block;
+    }
+
+    .hero-mobile {
+        display: none;
+    }
+}
+
+/* carousel */
+.carousel-item .row {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: #000;
+    border: none; 
+}
+
+.carousel-indicators .active {
+    background-color: #fff; 
+}
