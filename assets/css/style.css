@@ -21,6 +21,10 @@ main{
     font-weight: 400;
 }
 
+.receta1-mobile, h6{
+    font-size:16px ;
+    font-weight: 400;
+}
 
 .titulo-desktop{
     font-size: 40px;
