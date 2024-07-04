@@ -15,19 +15,25 @@ $(document).ready(
     function () {
 
         $('#enviarCorreo').tooltip();
-
         $('#enviarCorreo').click(
             function () {
-                alert('El correo fue enviado correctamente...');
+                alert('El correo fue enviado correctamente.');
 
             }
         )
 
-        $('h2').on('dblclick', function () {
-            if ($(this).text() === 'INGREDIENTES' || $(this).text() === 'PREPARACIÓN') {
+        $('#AñadirFavoritos').tooltip();
+        $('#AñadirFavoritos').click(
+            function () {
+                alert('Agrega esta receta a tus favoritos');
+
+            }
+        )
+
+        $("h2").dblclick(
+            function(){
                 $(this).css('color', 'red');
             }
-        }
         )
 
         $('.card-title').click(
