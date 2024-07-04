@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Cabin', sans-serif;
 }
 
 .navbar-brand{
@@ -8,19 +9,25 @@ body{
     font-size: 37px;
 }
 
+.btn{
+    font-weight: 400;
+}
+.receta1-desktop{
+    font-size:20px ;
+    font-weight: 400;
+}
+
+
 .titulo-desktop{
-    font-family: "Cabin";
     font-size: 40px;
     width: 300px;
 }
 
 .subtitulo-desktop{
-    font-family:"Cabin";
     font-size: 20px;
 }
 
 .titulo-mobile{
-    font-family: "Cabin";
     font-size: 25px;
     width: 200px;
 }
@@ -32,6 +39,7 @@ body{
     margin: 20px 0; 
     opacity: 100%;
 }
+
 
 /* Estilos por defecto (mobile first) */
 .hero-desktop {
@@ -65,6 +73,7 @@ body{
 }
 
 /* carousel */
+
 .carousel-item .row {
     display: flex;
     justify-content: center;
@@ -76,11 +85,11 @@ body{
 }
 
 .carousel-indicators button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50px;
-    background-color: #000;
-    border: none; 
+    border-radius: 100% !important;
+    padding: 5px 5px !important; 
+    width: 3px !important;
+    height: 2px !important;
+    background-color: black !important;
 }
 
 .carousel-indicators .active {
