@@ -12,13 +12,13 @@
 // Tooltip
 
 $(document).ready(function() {
-    // Inicializar tooltip
     $('#enviarCorreo').tooltip();
 });
 
 // Evento Click en Enviar Correo
 
 $(document).ready(function() {
+
     $('#enviarCorreo').click(function() {
         alert('El correo fue enviado correctamente...');
     });
@@ -27,11 +27,10 @@ $(document).ready(function() {
 // Cambio de color en Titulos 
 
 $(document).ready(function() {
+
     // Seleccionar los títulos por etiqueta y aplicar el evento dblclick
     $('h2').on('dblclick', function() {
-        // Verificar si el título es "INGREDIENTES" o "PREPARACIÓN"
         if ($(this).text() === 'INGREDIENTES' || $(this).text() === 'PREPARACIÓN') {
-            // Cambiar el color del texto a rojo
             $(this).css('color', 'red');
         }
     });
@@ -41,10 +40,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('.card-title').click(function() {
-        // Obtener el card-body correspondiente a la tarjeta clickeada
         var cardBody = $(this).closest('.card').find('.card-body .card-text');
-
-        // Alternar la visibilidad del texto dentro del card-body
         cardBody.toggle();
     });
 });
