@@ -11,36 +11,33 @@
 
 // Tooltip
 
-$(document).ready(function() {
-    $('#enviarCorreo').tooltip();
-});
+$(document).ready(
+    function () {
 
-// Evento Click en Enviar Correo
+        $('#enviarCorreo').tooltip();
 
-$(document).ready(function() {
+        $('#enviarCorreo').click(
+            function () {
+                alert('El correo fue enviado correctamente...');
 
-    $('#enviarCorreo').click(function() {
-        alert('El correo fue enviado correctamente...');
-    });
-});
+            }
+        )
 
-// Cambio de color en Titulos 
-
-$(document).ready(function() {
-
-    // Seleccionar los títulos por etiqueta y aplicar el evento dblclick
-    $('h2').on('dblclick', function() {
-        if ($(this).text() === 'INGREDIENTES' || $(this).text() === 'PREPARACIÓN') {
-            $(this).css('color', 'red');
+        $('h2').on('dblclick', function () {
+            if ($(this).text() === 'INGREDIENTES' || $(this).text() === 'PREPARACIÓN') {
+                $(this).css('color', 'red');
+            }
         }
-    });
-});
+        )
 
-// Toggle de contenido para las cards
+        $('.card-title').click(
+            function () {
+                var cardBody = $(this).closest('.card').find('.card-body .card-text');
+                cardBody.toggle();
+            }
+        )
 
-$(document).ready(function() {
-    $('.card-title').click(function() {
-        var cardBody = $(this).closest('.card').find('.card-body .card-text');
-        cardBody.toggle();
-    });
-});
+
+    }
+);
+
