@@ -15,27 +15,20 @@ $(document).ready(
     function () {
 
         $('#enviarCorreo').tooltip();
+
         $('#enviarCorreo').click(
             function () {
                 alert('El correo fue enviado correctamente.');
-
             }
         )
 
         $('#AñadirFavoritos').tooltip();
-        $('#AñadirFavoritos').click(
-            function () {
-                alert('Agrega esta receta a tus favoritos');
-
-            }
-        )
 
         $("h2").dblclick(
             function () {
                 $(this).css('color', 'red');
             }
         )
-
 
         $(".card-title").on("click", function () {
             $(this).siblings(".card-text").toggle("slow");
